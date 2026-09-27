@@ -1,1 +1,25 @@
+# ==== Keil MDK 编译产物（不提交）====
 Output/
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.map
+*.lst
+*.htm
+*.iex
+*.dep
+*.bak
+
+# Keil 工程编译中间目录
+project/Listings/
+project/Objects/
+project/DebugConfig/
+project/*.uvguix.*
+
+# WorkBuddy 本地工作数据（不提交）
+.workbuddy/
+
+# 其他
+*.log
