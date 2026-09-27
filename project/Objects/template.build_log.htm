@@ -1,0 +1,218 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Lenovo,  , LIC=LSNXV-PLV19-LQ10Q-N75HH-HJECT-4Y63I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  D:\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.0.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+D:\workspace\software\MCU\project\template.uvprojx
+Project File Date:  09/27/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling port.c...
+compiling circular_buffer.c...
+..\Components\circular_buffer\src\circular_buffer.h(7): error:  #5: cannot open source input file "port.h": No such file or directory
+  #include "port.h"
+..\Components\circular_buffer\src\circular_buffer.c: 0 warnings, 1 error
+compiling app_cmd.c...
+..\App\app_cmd.c(2): error:  #5: cannot open source input file "shell.h": No such file or directory
+  #include "shell.h"
+..\App\app_cmd.c: 0 warnings, 1 error
+compiling main.c...
+D:\keil\GigaDevice\GD32F4xx_DFP\3.5.0\Device\F4XX\Include\gd32f4xx.h(287): error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"
+..\App\main.c: 0 warnings, 1 error
+compiling shell_companion.c...
+..\Components\lettershell\src\shell_cfg.h(15): error:  #5: cannot open source input file "systick.h": No such file or directory
+  #include "systick.h"
+..\Components\lettershell\src\shell_companion.c: 0 warnings, 1 error
+compiling shell.c...
+..\Components\lettershell\src\shell_cfg.h(15): error:  #5: cannot open source input file "systick.h": No such file or directory
+  #include "systick.h"
+..\Components\lettershell\src\shell.c: 0 warnings, 1 error
+compiling shell_ext.c...
+..\Components\lettershell\src\shell_cfg.h(15): error:  #5: cannot open source input file "systick.h": No such file or directory
+  #include "systick.h"
+..\Components\lettershell\src\shell_ext.c: 0 warnings, 1 error
+compiling shell_cmd_list.c...
+..\Components\lettershell\src\shell_cfg.h(15): error:  #5: cannot open source input file "systick.h": No such file or directory
+  #include "systick.h"
+..\Components\lettershell\src\shell_cmd_list.c: 0 warnings, 1 error
+compiling shell_port.c...
+..\Components\lettershell\port\shell_port.h(5): error:  #5: cannot open source input file "shell.h": No such file or directory
+  #include "shell.h"
+..\Components\lettershell\port\shell_port.c: 0 warnings, 1 error
+assembling startup_gd32f407_427.s...
+compiling gd32f4xx_it.c...
+..\Startup\core_cm4.h(187): error:  #5: cannot open source input file "core_cmInstr.h": No such file or directory
+  #include <core_cmInstr.h>                /* Core Instruction Access                         */
+..\Startup\gd32f4xx_it.c: 0 warnings, 1 error
+compiling retarget.c...
+..\Startup\core_cm4.h(187): error:  #5: cannot open source input file "core_cmInstr.h": No such file or directory
+  #include <core_cmInstr.h>                /* Core Instruction Access                         */
+..\Startup\retarget.c: 0 warnings, 1 error
+compiling gd32f450i_eval.c...
+..\Startup\core_cm4.h(187): error:  #5: cannot open source input file "core_cmInstr.h": No such file or directory
+  #include <core_cmInstr.h>                /* Core Instruction Access                         */
+..\Startup\gd32f450i_eval.c: 0 warnings, 1 error
+compiling gd32f4xx_adc.c...
+..\Bsp\gd32f4\Source\gd32f4xx_adc.c(35): error:  #5: cannot open source input file "gd32f4xx_adc.h": No such file or directory
+  #include "gd32f4xx_adc.h"
+..\Bsp\gd32f4\Source\gd32f4xx_adc.c: 0 warnings, 1 error
+compiling system_gd32f4xx.c...
+..\Startup\core_cm4.h(187): error:  #5: cannot open source input file "core_cmInstr.h": No such file or directory
+  #include <core_cmInstr.h>                /* Core Instruction Access                         */
+..\Startup\system_gd32f4xx.c: 0 warnings, 1 error
+compiling systick.c...
+..\Startup\core_cm4.h(187): error:  #5: cannot open source input file "core_cmInstr.h": No such file or directory
+  #include <core_cmInstr.h>                /* Core Instruction Access                         */
+..\Startup\systick.c: 0 warnings, 1 error
+compiling gd32f4xx_can.c...
+..\Bsp\gd32f4\Source\gd32f4xx_can.c(35): error:  #5: cannot open source input file "gd32f4xx_can.h": No such file or directory
+  #include "gd32f4xx_can.h"
+..\Bsp\gd32f4\Source\gd32f4xx_can.c: 0 warnings, 1 error
+compiling gd32f4xx_crc.c...
+..\Bsp\gd32f4\Source\gd32f4xx_crc.c(35): error:  #5: cannot open source input file "gd32f4xx_crc.h": No such file or directory
+  #include "gd32f4xx_crc.h"
+..\Bsp\gd32f4\Source\gd32f4xx_crc.c: 0 warnings, 1 error
+compiling gd32f4xx_ctc.c...
+..\Bsp\gd32f4\Source\gd32f4xx_ctc.c(35): error:  #5: cannot open source input file "gd32f4xx_ctc.h": No such file or directory
+  #include "gd32f4xx_ctc.h"
+..\Bsp\gd32f4\Source\gd32f4xx_ctc.c: 0 warnings, 1 error
+compiling gd32f4xx_dac.c...
+..\Bsp\gd32f4\Source\gd32f4xx_dac.c(35): error:  #5: cannot open source input file "gd32f4xx_dac.h": No such file or directory
+  #include "gd32f4xx_dac.h"
+..\Bsp\gd32f4\Source\gd32f4xx_dac.c: 0 warnings, 1 error
+compiling gd32f4xx_dma.c...
+..\Bsp\gd32f4\Source\gd32f4xx_dma.c(34): error:  #5: cannot open source input file "gd32f4xx_dma.h": No such file or directory
+  #include "gd32f4xx_dma.h"
+..\Bsp\gd32f4\Source\gd32f4xx_dma.c: 0 warnings, 1 error
+compiling gd32f4xx_dbg.c...
+..\Bsp\gd32f4\Source\gd32f4xx_dbg.c(35): error:  #5: cannot open source input file "gd32f4xx_dbg.h": No such file or directory
+  #include "gd32f4xx_dbg.h"
+..\Bsp\gd32f4\Source\gd32f4xx_dbg.c: 0 warnings, 1 error
+compiling gd32f4xx_dci.c...
+..\Bsp\gd32f4\Source\gd32f4xx_dci.c(35): error:  #5: cannot open source input file "gd32f4xx_dci.h": No such file or directory
+  #include "gd32f4xx_dci.h"
+..\Bsp\gd32f4\Source\gd32f4xx_dci.c: 0 warnings, 1 error
+compiling gd32f4xx_enet.c...
+..\Bsp\gd32f4\Source\gd32f4xx_enet.c(34): error:  #5: cannot open source input file "gd32f4xx_enet.h": No such file or directory
+  #include "gd32f4xx_enet.h"
+..\Bsp\gd32f4\Source\gd32f4xx_enet.c: 0 warnings, 1 error
+compiling gd32f4xx_exmc.c...
+..\Bsp\gd32f4\Source\gd32f4xx_exmc.c(35): error:  #5: cannot open source input file "gd32f4xx_exmc.h": No such file or directory
+  #include "gd32f4xx_exmc.h"
+..\Bsp\gd32f4\Source\gd32f4xx_exmc.c: 0 warnings, 1 error
+compiling gd32f4xx_exti.c...
+..\Bsp\gd32f4\Source\gd32f4xx_exti.c(34): error:  #5: cannot open source input file "gd32f4xx_exti.h": No such file or directory
+  #include "gd32f4xx_exti.h"
+..\Bsp\gd32f4\Source\gd32f4xx_exti.c: 0 warnings, 1 error
+compiling gd32f4xx_fmc.c...
+..\Bsp\gd32f4\Source\gd32f4xx_fmc.c(36): error:  #5: cannot open source input file "gd32f4xx_fmc.h": No such file or directory
+  #include "gd32f4xx_fmc.h"
+..\Bsp\gd32f4\Source\gd32f4xx_fmc.c: 0 warnings, 1 error
+compiling gd32f4xx_fwdgt.c...
+..\Bsp\gd32f4\Source\gd32f4xx_fwdgt.c(35): error:  #5: cannot open source input file "gd32f4xx_fwdgt.h": No such file or directory
+  #include "gd32f4xx_fwdgt.h"
+..\Bsp\gd32f4\Source\gd32f4xx_fwdgt.c: 0 warnings, 1 error
+compiling gd32f4xx_gpio.c...
+..\Bsp\gd32f4\Source\gd32f4xx_gpio.c(35): error:  #5: cannot open source input file "gd32f4xx_gpio.h": No such file or directory
+  #include "gd32f4xx_gpio.h"
+..\Bsp\gd32f4\Source\gd32f4xx_gpio.c: 0 warnings, 1 error
+compiling gd32f4xx_i2c.c...
+..\Bsp\gd32f4\Source\gd32f4xx_i2c.c(35): error:  #5: cannot open source input file "gd32f4xx_i2c.h": No such file or directory
+  #include "gd32f4xx_i2c.h"
+..\Bsp\gd32f4\Source\gd32f4xx_i2c.c: 0 warnings, 1 error
+compiling gd32f4xx_misc.c...
+..\Bsp\gd32f4\Source\gd32f4xx_misc.c(34): error:  #5: cannot open source input file "gd32f4xx_misc.h": No such file or directory
+  #include "gd32f4xx_misc.h"
+..\Bsp\gd32f4\Source\gd32f4xx_misc.c: 0 warnings, 1 error
+compiling gd32f4xx_iref.c...
+..\Bsp\gd32f4\Source\gd32f4xx_iref.c(35): error:  #5: cannot open source input file "gd32f4xx_iref.h": No such file or directory
+  #include "gd32f4xx_iref.h"
+..\Bsp\gd32f4\Source\gd32f4xx_iref.c: 0 warnings, 1 error
+compiling gd32f4xx_ipa.c...
+..\Bsp\gd32f4\Source\gd32f4xx_ipa.c(35): error:  #5: cannot open source input file "gd32f4xx_ipa.h": No such file or directory
+  #include "gd32f4xx_ipa.h"
+..\Bsp\gd32f4\Source\gd32f4xx_ipa.c: 0 warnings, 1 error
+compiling gd32f4xx_rcu.c...
+..\Bsp\gd32f4\Source\gd32f4xx_rcu.c(35): error:  #5: cannot open source input file "gd32f4xx_rcu.h": No such file or directory
+  #include "gd32f4xx_rcu.h"
+..\Bsp\gd32f4\Source\gd32f4xx_rcu.c: 0 warnings, 1 error
+compiling gd32f4xx_pmu.c...
+..\Bsp\gd32f4\Source\gd32f4xx_pmu.c(35): error:  #5: cannot open source input file "gd32f4xx_pmu.h": No such file or directory
+  #include "gd32f4xx_pmu.h"
+..\Bsp\gd32f4\Source\gd32f4xx_pmu.c: 0 warnings, 1 error
+compiling gd32f4xx_rtc.c...
+..\Bsp\gd32f4\Source\gd32f4xx_rtc.c(36): error:  #5: cannot open source input file "gd32f4xx_rtc.h": No such file or directory
+  #include "gd32f4xx_rtc.h"
+..\Bsp\gd32f4\Source\gd32f4xx_rtc.c: 0 warnings, 1 error
+compiling gd32f4xx_spi.c...
+..\Bsp\gd32f4\Source\gd32f4xx_spi.c(36): error:  #5: cannot open source input file "gd32f4xx_spi.h": No such file or directory
+  #include "gd32f4xx_spi.h"
+..\Bsp\gd32f4\Source\gd32f4xx_spi.c: 0 warnings, 1 error
+compiling gd32f4xx_sdio.c...
+..\Bsp\gd32f4\Source\gd32f4xx_sdio.c(35): error:  #5: cannot open source input file "gd32f4xx_sdio.h": No such file or directory
+  #include "gd32f4xx_sdio.h"
+..\Bsp\gd32f4\Source\gd32f4xx_sdio.c: 0 warnings, 1 error
+compiling gd32f4xx_timer.c...
+..\Bsp\gd32f4\Source\gd32f4xx_timer.c(36): error:  #5: cannot open source input file "gd32f4xx_timer.h": No such file or directory
+  #include "gd32f4xx_timer.h"
+..\Bsp\gd32f4\Source\gd32f4xx_timer.c: 0 warnings, 1 error
+compiling gd32f4xx_syscfg.c...
+..\Bsp\gd32f4\Source\gd32f4xx_syscfg.c(35): error:  #5: cannot open source input file "gd32f4xx_syscfg.h": No such file or directory
+  #include "gd32f4xx_syscfg.h"
+..\Bsp\gd32f4\Source\gd32f4xx_syscfg.c: 0 warnings, 1 error
+compiling gd32f4xx_tli.c...
+..\Bsp\gd32f4\Source\gd32f4xx_tli.c(35): error:  #5: cannot open source input file "gd32f4xx_tli.h": No such file or directory
+  #include "gd32f4xx_tli.h"
+..\Bsp\gd32f4\Source\gd32f4xx_tli.c: 0 warnings, 1 error
+compiling gd32f4xx_usart.c...
+..\Bsp\gd32f4\Source\gd32f4xx_usart.c(35): error:  #5: cannot open source input file "gd32f4xx_usart.h": No such file or directory
+  #include "gd32f4xx_usart.h"
+..\Bsp\gd32f4\Source\gd32f4xx_usart.c: 0 warnings, 1 error
+compiling gd32f4xx_trng.c...
+..\Bsp\gd32f4\Source\gd32f4xx_trng.c(35): error:  #5: cannot open source input file "gd32f4xx_trng.h": No such file or directory
+  #include "gd32f4xx_trng.h"
+..\Bsp\gd32f4\Source\gd32f4xx_trng.c: 0 warnings, 1 error
+compiling gd32f4xx_wwdgt.c...
+..\Bsp\gd32f4\Source\gd32f4xx_wwdgt.c(35): error:  #5: cannot open source input file "gd32f4xx_wwdgt.h": No such file or directory
+  #include "gd32f4xx_wwdgt.h"
+..\Bsp\gd32f4\Source\gd32f4xx_wwdgt.c: 0 warnings, 1 error
+".\Objects\template.axf" - 42 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: GigaDevice
+                https://gd32mcu.com/GigaDevice.GD32F4xx_DFP.3.5.0.pack
+                GigaDevice.GD32F4xx_DFP.3.5.0
+                GigaDevice GD32F4xx Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  D:\keil\GigaDevice\GD32F4xx_DFP\3.5.0\Device\F4XX\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
